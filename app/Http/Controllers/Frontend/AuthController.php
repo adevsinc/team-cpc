@@ -70,7 +70,7 @@ class AuthController extends Controller
             'login_otp_date' => now()
         ]);
 
-        // Send SMS (implement your SMS service here)
+        
         $this->sendSms($phone, $otp);
 
         return response()->json([
